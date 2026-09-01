@@ -1,0 +1,249 @@
+🔄 First: What is a Loop?
+
+A loop means repeating the same work again and again.
+
+For example:
+
+for i in range(1, 6):
+    print(i)
+
+Output:
+
+1
+2
+3
+4
+5
+
+Normally, the loop continues from 1 to 5.
+
+But sometimes we want to stop, skip, or do nothing.
+
+That's where break, continue, and pass come in.
+
+🛑 1. BREAK — "STOP"
+Easy meaning
+
+break completely stops the loop.
+
+Think about searching for your friend:
+
+You → Check Student 1 ❌
+      Check Student 2 ❌
+      Check Student 3 ✅ FOUND!
+      
+      STOP SEARCHING 🛑
+
+Once you find your friend, you don't continue searching.
+
+That's break.
+
+Example
+for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+Think step-by-step:
+i = 1 → print 1
+i = 2 → print 2
+i = 3 → BREAK → STOP 🛑
+
+Output:
+
+1
+2
+🎤 Tell your class:
+
+"Break is used to stop the entire loop. Here, when the value becomes 3, break executes and the loop stops immediately. That's why only 1 and 2 are printed."
+
+🧠 Remember:
+
+BREAK = STOP
+
+⏭️ 2. CONTINUE — "SKIP"
+Easy meaning
+
+continue skips only the current iteration.
+
+Think about attendance:
+
+Student 1 → Present ✅
+Student 2 → Present ✅
+Student 3 → Absent ❌ → SKIP
+Student 4 → Present ✅
+Student 5 → Present ✅
+
+We don't stop taking attendance.
+
+We just skip student 3 and continue.
+
+That's continue.
+
+Example
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+Think step-by-step:
+i = 1 → print 1
+i = 2 → print 2
+i = 3 → CONTINUE → SKIP ⏭️
+i = 4 → print 4
+i = 5 → print 5
+
+Output:
+
+1
+2
+4
+5
+🎤 Tell your class:
+
+"Continue does not stop the loop. It only skips the current iteration. Here, when i becomes 3, Python skips that iteration and continues with 4 and 5."
+
+🧠 Remember:
+
+CONTINUE = SKIP
+
+😶 3. PASS — "DO NOTHING"
+Easy meaning
+
+pass means do nothing.
+
+This is the easiest one.
+
+Imagine you're writing a program and you say:
+
+"I don't want to write the code for this part right now. I'll do it later."
+
+You can write:
+
+pass
+
+It tells Python:
+
+"Do nothing here for now."
+
+Example
+for i in range(1, 6):
+    if i == 3:
+        pass
+    print(i)
+What happens?
+
+When:
+
+i = 3
+
+Python reaches:
+
+pass
+
+But pass does nothing.
+
+So Python moves to:
+
+print(i)
+
+Therefore, 3 is printed.
+
+Output:
+
+1
+2
+3
+4
+5
+🎤 Tell your class:
+
+"Pass does not stop or skip the loop. It simply does nothing. After pass, Python continues with the next statement."
+
+🧠 Remember:
+
+PASS = DO NOTHING
+
+⭐ Now Understand the Difference
+
+Imagine the loop is going through:
+
+1 → 2 → 3 → 4 → 5
+
+At 3:
+
+🛑 break
+1 → 2 → 3 🛑
+             STOP
+
+Result:
+
+1 2
+⏭️ continue
+1 → 2 → 3 ⏭️ → 4 → 5
+          SKIP
+
+Result:
+
+1 2 4 5
+😶 pass
+1 → 2 → 3 😶 → 4 → 5
+          DO NOTHING
+
+Result:
+
+1 2 3 4 5
+🎯 One Sentence You MUST Remember
+
+If your teacher suddenly asks you:
+
+"Explain break, continue and pass."
+
+Just say:
+
+"Break stops the entire loop, continue skips the current iteration, and pass does nothing."
+
+That's the core answer.
+
+🗣️ How You Should Present It
+
+Don't say complicated textbook definitions.
+
+Use this pattern for every statement:
+
+1. Name
+
+"First, let's understand break."
+
+2. Simple meaning
+
+"Break means stop."
+
+3. Real-life example
+
+"Imagine I am searching for my friend. Once I find them, I stop searching."
+
+4. Code
+
+Show the code.
+
+5. Output
+
+Show the output.
+
+6. Explain what happened
+
+"When i becomes 3, break executes, so the loop stops."
+
+Then move to the next one.
+
+🧠 Your Last-Minute Cheat Sheet
+	break	continue	pass
+Meaning	🛑 Stop	⏭️ Skip	😶 Nothing
+Loop stops?	✅ Yes	❌ No	❌ No
+Current iteration skipped?	Loop ends	✅ Yes	❌ No
+Next iterations run?	❌ No	✅ Yes	✅ Yes
+Final memory trick:
+🛑 BREAK → STOP
+⏭️ CONTINUE → SKIP
+😶 PASS → DO NOTHING
+
+If you can explain these three examples, you are ready for the basic demo.
